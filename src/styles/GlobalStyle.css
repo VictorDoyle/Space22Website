@@ -1,0 +1,24 @@
+/* navigation */
+
+/* nav container */
+.navContainer {
+    display: flex;
+}
+.logoMain {
+
+    margin-left: 5em;
+}
+
+.navLink {
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 5;
+    padding-top: 2em;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    cursor: pointer;
+    color: lightskyblue;
+}
