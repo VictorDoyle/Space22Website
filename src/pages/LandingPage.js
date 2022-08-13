@@ -10,7 +10,9 @@ function LandingPage() {
     return(
         <>
         <NavBar/>
-        <h1 className="landingPageTitle"> Welcome To Space-22 Music </h1>
+        <main id='main'>
+            <h1 className="landingPageTitle"> Welcome To Space-22 Music </h1>
+        </main>
         </>
     )
 }

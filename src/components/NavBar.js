@@ -1,11 +1,14 @@
 import React from "react";
 import "../styles/GlobalStyle.css";
 import { Link } from "react-router-dom";
+/* skip link */
+import SkipToMain from "./SkipToMain";
 
 function NavBar() {
     return(
         <>
-        {/* banner n logo here */}
+        {/* skip link here */}
+        <SkipToMain/>
         <div className="navContainer">
             <Link to={"/"}>
                 <h2 className="navLink logoMain">Space-22</h2>

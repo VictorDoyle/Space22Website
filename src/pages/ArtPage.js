@@ -1,12 +1,12 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 
-function AboutPage() {
+function ArtPage() {
     return(
         <>
-        <NavBar/>
-        <h2> About Page</h2>
+         <NavBar/>
         </>
-    )
+    ) 
 }
-export default AboutPage
+
+export default ArtPage
