@@ -6,7 +6,10 @@ import NavBar from '../components/NavBar.js';
 import "../styles/LandingPage.css"
 import "../styles/GlobalStyle.css";
 /* icons */
-import { MdMusicNote, MdPublic, MdSentimentSatisfiedAlt } from 'react-icons/md';
+import { MdMusicNote, MdPublic, MdSentimentSatisfiedAlt, MdNorthEast } from 'react-icons/md';
+/* images */
+import spaceShowCase from "../images/space22albums.jpg";
+
 
 
 function LandingPage() {
@@ -34,18 +37,19 @@ function LandingPage() {
 
             {/* second section */}
             <div className='flexGridContent'>
-                <div className='landingPageItem'>
-                    <p> text here here</p>
+                <div className='landingPageItem sectionTwo'>
+                    <h2> Producing Electronic and Techno music with the intent of breaking convention.</h2>
+                    <Link tabIndex={0} className="aboutUsBtn" to={'/about'}> About Us <MdNorthEast className="contactArrow" /></Link>
                 </div>
                 <div className='landingPageItem'>
-                    <p> img here</p>
-                    <img className="showCaseImg" alt='' role={"presentation"}/> 
+                    <img className="showCaseImg" alt='' role={"presentation"} src={spaceShowCase}/> 
                 </div>
             </div>
+
             {/* third section */}
             <div className='flexGridContent'>
-                <div className='landingPageItem'>
-                    <p> text here here</p>
+                <div className='landingPageItem sectionThree'>
+                    <p> text h</p>
                 </div>
                 <div className='landingPageItem'>
                     <p> img here</p>

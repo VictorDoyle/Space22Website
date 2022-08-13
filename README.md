@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Packages Used
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Framer for motion on images/dynamic content
+- React Router Dom for routes/url
+- React Icons for multiple icon libraries
 
 ## Available Scripts
 
