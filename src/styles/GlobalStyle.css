@@ -1,10 +1,19 @@
+/* site-wide fonts */
+h1, h2, h3, h4, h5, p, a {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
 /* navigation */
 .navContainer {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.logoMain {
 
-    margin-left: 5em;
+.logoMain {
+    margin-left: 1em;
+    text-decoration: none !important;
 }
 
 .navLink {
@@ -12,13 +21,14 @@
     justify-content: center;
     align-items: center;
     flex-grow: 5;
-    padding-top: 2em;
     text-decoration: none;
+    display: flex;
 }
 
 .navLink:hover {
     cursor: pointer;
-    color: lightskyblue;
+    color: black;
+    text-decoration: underline;
 }
 
 /* main/body */

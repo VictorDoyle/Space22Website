@@ -10,8 +10,8 @@ function NavBar() {
         {/* skip link here */}
         <SkipToMain/>
         <div className="navContainer">
-            <Link to={"/"}>
-                <h2 className="navLink logoMain">Space-22</h2>
+            <Link to={"/"} className="navLink logoMain">
+                <h2>Space-22</h2>
             </Link>
 
             {/* nav list here */}
