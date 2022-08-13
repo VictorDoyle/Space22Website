@@ -1,0 +1,73 @@
+.flexGridMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.landingPageItem {
+    align-items: center;
+    flex: 1 1 150px;
+}
+
+.landingPageTitle {
+    font-size: 150px;
+}
+
+.flexGridContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.iconBarLeft {
+    width: 50%;
+    margin-top: 15%;
+    margin-left:30%;
+    margin-right:50%;
+    font-size: 20px;
+    writing-mode: vertical-lr;
+    min-width: 20px;
+}
+
+/* icon bar rotate */
+@keyframes rotate90Deg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+
+/* on hover animation show text */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.hoverTextIcons {
+    writing-mode:horizontal-tb;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
+.iconBarLeft:hover .hoverTextIcons {
+	animation: fadeIn 1s;
+    animation: slideUp .5s; 
+  	opacity: 1;
+}
+
+.iconOnly:hover svg{
+    animation: rotate90Deg 1s;
+}

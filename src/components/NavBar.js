@@ -3,6 +3,8 @@ import "../styles/GlobalStyle.css";
 import { Link } from "react-router-dom";
 /* skip link */
 import SkipToMain from "./SkipToMain";
+/* icons */
+import { MdNorthEast } from 'react-icons/md';
 
 function NavBar() {
     return(
@@ -20,7 +22,11 @@ function NavBar() {
             <Link tabIndex={0} className="navLink" to={'/about'}> About</Link>
 
             {/* contact button here */}
-            <Link tabIndex={0} className="navLink contactUs" to={'/contact'}> Contact</Link>
+            <div className="contactUsWrapper">
+                <Link tabIndex={0} className="navLink contactUs" to={'/contact'}> Contact <MdNorthEast className="contactArrow" /></Link>
+                
+            </div>
+            
         </div>
 
         </>
