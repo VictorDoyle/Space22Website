@@ -9,8 +9,13 @@ import "../styles/GlobalStyle.css";
 import { MdMusicNote, MdPublic, MdSentimentSatisfiedAlt, MdNorthEast } from 'react-icons/md';
 /* images */
 import spaceShowCase from "../images/space22albums.jpg";
-
-
+/* album showcase imgs */
+import albumShow2 from "../images/albumCovers/BirthOfNyx-Album.jpg";
+import albumShow3 from "../images/albumCovers/Gravity-Riders-album.jpg";
+import albumShow8 from "../images/albumCovers/TheID-Single.jpg";
+import albumShow9 from "../images/albumCovers/Tigereyes-Album.jpg";
+/* motion fx */
+import { motion, useMotionValue, useTransform } from "framer-motion";
 
 function LandingPage() {
     return(
@@ -42,20 +47,50 @@ function LandingPage() {
                     <Link tabIndex={0} className="aboutUsBtn" to={'/about'}> About Us <MdNorthEast className="contactArrow" /></Link>
                 </div>
                 <div className='landingPageItem'>
-                    <img className="showCaseImg" alt='' role={"presentation"} src={spaceShowCase}/> 
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+                            <img className="showCaseImg" alt='' role={"presentation"} src={spaceShowCase}/> 
+                </motion.div>
                 </div>
             </div>
 
             {/* third section */}
-            <div className='flexGridContent'>
-                <div className='landingPageItem sectionThree'>
-                    <p> text h</p>
-                </div>
+            <div className='flexGridMain'>
                 <div className='landingPageItem'>
-                    <p> img here</p>
-                    <img className="showCaseImg" alt='' role={"presentation"}/> 
+                    {/* keep empty */}
                 </div>
-            </div>
+                    <div className='landingPageItem'>
+                        <h2 className="landingPageTitle2"> Unconventional Approaches </h2>
+                        <Link tabIndex={0} className="aboutUsBtn" to={'/art'}> View All Albums <MdNorthEast className="contactArrow" /></Link>
+                    </div>
+            </div> 
+
+            {/* fourth section showcase albums n art */}
+            <div className='flexGridContentAlbums'>
+                <div className='showAlbumContainer'>
+                    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+                                <img className="showCaseAlbum" alt='' role={"presentation"} src={albumShow2}/> 
+                    </motion.div>
+                </div>
+
+
+                <div className='showAlbumContainer'>
+                    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+                                <img className="showCaseAlbum" alt='' role={"presentation"} src={albumShow9}/> 
+                    </motion.div>
+                </div>
+
+                <div className='showAlbumContainer'>
+                    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+                                <img className="showCaseAlbum" alt='' role={"presentation"} src={albumShow8}/> 
+                    </motion.div>
+                </div>
+
+                <div className='showAlbumContainer'>
+                    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+                                <img className="showCaseAlbum" alt='' role={"presentation"} src={albumShow3}/> 
+                    </motion.div>
+                </div>
+            </div>        
         </main>
         </>
     )

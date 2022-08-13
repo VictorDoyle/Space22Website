@@ -8,9 +8,15 @@
     flex: 1 1 150px;
 }
 
+/* SECTION: FONT SIZING */
 .landingPageTitle {
     font-size: 150px;
 }
+
+.landingPageTitle2 {
+    font-size: 100px;
+}
+
 
 .flexGridContent {
     display: grid;
@@ -94,20 +100,22 @@
 
 
 /* SECTION: images and multimedia */
-@keyframes stretchImage {
-    0% {
-        transform: scale(.5);
-    }
-    100%{
-        transform: scale(2);
-    }
-}
+
 .showCaseImg {
-    scale: .9;
     max-width: 100%;
     border-radius: 30px;
-    transition: all linear .5s;
-    animation: stretchImage 3s;
+    right: 5em;
+    position: relative;
 }
 
-/* on scroll */
+.showCaseAlbum {
+    max-width: 80%;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+.flexGridContentAlbums {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
