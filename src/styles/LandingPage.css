@@ -92,6 +92,22 @@
     max-width: 25%;
 }
 
+.viewAlbumsBtn {
+    display: block;
+    margin-top: -3em;
+    margin-bottom: 5em;
+    border-radius: 50px;
+    line-height: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2.5px solid #333;
+    max-width: 25%;
+}
+
+
 /* SECTION: Content sections */
 .sectionTwo , .sectionThree {
     width: 80%;
@@ -108,14 +124,21 @@
     position: relative;
 }
 
+.showAlbumContainer {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .showCaseAlbum {
-    max-width: 80%;
+    max-width: 60%;
     border-radius: 30px;
     display: block;
     margin: 0 auto;
+    padding: 1em;
 }
 
 .flexGridContentAlbums {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
 }
+
