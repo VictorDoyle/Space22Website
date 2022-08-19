@@ -1,0 +1,28 @@
+/* top  banner section */
+.albumBannerRegion {
+
+}
+
+.pageTitleLeft {
+    font-size: 10em;
+    margin-left: 1.1em;
+}
+
+/* text of albums here */
+.albumBannerContainer {
+
+}
+
+.albumTitlesRight {
+
+}
+
+.albumTitle {
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+}
+
+.albumTitle:hover {
+    color: white;
+    transition: .5s ease-in-out;
+}
