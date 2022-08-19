@@ -49,7 +49,7 @@ function LandingPage() {
             <div className='flexGridContent'>
                 <div className='landingPageItem sectionTwo'>
                     <h2> Producing Electronic and Techno music with the intent of breaking convention.</h2>
-                    <Link tabIndex={0} className="aboutUsBtn" to={'/about'}> About Us <MdNorthEast className="contactArrow" /></Link>
+                    <Link tabIndex={0} className="aboutUsBtn" to={'/about'}> About Space-22 <MdNorthEast className="contactArrow" /></Link>
                 </div>
                 <div className='landingPageItem'>
                 <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>

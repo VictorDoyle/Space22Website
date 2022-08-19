@@ -5,6 +5,7 @@ function ArtPage() {
     return(
         <>
          <NavBar/>
+         <h1> Art</h1>
         </>
     ) 
 }
