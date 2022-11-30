@@ -125,3 +125,18 @@
 .largeH2 {
     font-size: 45px;
 }
+
+/* fix below */
+.w_albumLandingShowCase {
+    max-width: 500px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.b_albumLandingShowCase {
+    max-width: 500px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right:auto;
+}

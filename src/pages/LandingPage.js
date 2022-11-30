@@ -8,7 +8,9 @@ import ReturnToTop from "../components/ReturnToTop";
 import "../styles/LandingPage.css"
 import "../styles/GlobalStyle.css";
 import Footer from '../components/Footer.js';
-/* hooks */
+/* imgs */
+import w_albumShow1 from "../images/W_AlbumLanding1.jpg";
+import b_albumShow1 from "../images/B_AlbumLanding1.jpg";
 
 function LandingPage() {
     /* logic here to find change theme to color base album */
@@ -62,6 +64,9 @@ function LandingPage() {
                     ? 
                 
                     <div className='titleWAlbums'>
+                        {/* image here */}
+                        <img className='w_albumLandingShowCase' src={w_albumShow1}/>
+                        {/* image end */}
                     <h2 className='largeH2'>White Lined Albums</h2>
                     <p>Space-22's white lined albums are used to demark songs that were made more geared towards electronic, club and house music genres </p>
                     <h3> // WHY? </h3>
@@ -75,6 +80,9 @@ function LandingPage() {
                     </div>
                     :            
                     <div className='titleBAlbums'>
+                        {/* image here */}
+                        <img className='b_albumLandingShowCase' src={b_albumShow1}/>
+                        {/* image end */}
                     <h2 className='largeH2' >Black Lined Albums</h2>
                     <p>Space-22's black lined albums are used to demark songs that were made more geared towards darkwave, hardcore techno and EBM music genres </p>
                     <h3> // WHY? </h3>
