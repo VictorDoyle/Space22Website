@@ -32,7 +32,7 @@ function Footer() {
         </div>
 
         {/* pre bottom of footer */}
-            <div className="navContainer belowFooter">
+            <div>
                 <p className="copyright">SPACE-22 © 2022</p>
             </div>
     

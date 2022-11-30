@@ -7,6 +7,7 @@ body {
 .light-theme {
     background-color: #EEEAEA;
     color: rgb(22 22 29) !important;
+    transition:  .5s;
 }
 .light-theme .topNav a, .topNav p{
     color: black;
@@ -15,6 +16,8 @@ body {
 .dark-theme {
     background-color: rgb(22 22 29);
     color: #EEEAEA !important;
+    transition:  .5s;
+
 }
 
 .dark-theme .topNav a, .topNav p{
@@ -37,8 +40,6 @@ h1, h2, h3, h4, h5, p, a {
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 .footerContainer {
     background-color: rgb(22 22 29);
@@ -122,8 +123,7 @@ h1, h2, h3, h4, h5, p, a {
 
 /* SECTION: Footer styling */
 .footerContainer {
-    position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
 }
 .footerContainer a , .footerContainer p {
@@ -135,15 +135,8 @@ h1, h2, h3, h4, h5, p, a {
     text-decoration: underline;
 }
 
-.belowFooter {
-    display: flex;
-    justify-content: center; /* Centering Horizantly */
-    align-items: center; 
-}
-
 .copyright {
-    bottom: 1em;
-    margin: auto 0;
+    bottom: 0;
+    margin: auto ;
     text-align: center;
-
 }
