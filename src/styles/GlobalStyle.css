@@ -1,11 +1,32 @@
 /* main/body */
 body {
     background-color: #EEEAEA;
-
 }
+
+/* dark vs light theme */
+.light-theme {
+    background-color: #EEEAEA;
+    color: rgb(22 22 29) !important;
+}
+.light-theme .topNav a, .topNav p{
+    color: black;
+}
+
+.dark-theme {
+    background-color: rgb(22 22 29);
+    color: #EEEAEA !important;
+}
+
+.dark-theme .topNav a, .topNav p{
+    color: #EEEAEA;
+}
+
 /* site-wide fonts */
 h1, h2, h3, h4, h5, p, a {
-    font-family: futura-pt, sans-serif;
+    /* font-family v1 */
+    /* font-family: futura-pt, sans-serif; */
+    /* font family v2 */
+    font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
     font-style: normal;
     letter-spacing: 1.5px;
@@ -17,9 +38,7 @@ h1, h2, h3, h4, h5, p, a {
     align-items: center;
 }
 
-.topNav a, .topNav p{
-    color: black;
-}
+
 
 .footerContainer {
     background-color: rgb(22 22 29);
@@ -92,8 +111,6 @@ h1, h2, h3, h4, h5, p, a {
 }
 
 
-
-
 /* SECTION: Separators/Graphics/Random */
 .hiddenDemarker {
     background-color: rgb(238 234 234);
@@ -103,8 +120,12 @@ h1, h2, h3, h4, h5, p, a {
     z-index: 2;
 }
 
-
 /* SECTION: Footer styling */
+.footerContainer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
 .footerContainer a , .footerContainer p {
     color: rgb(238 234 234);
 }

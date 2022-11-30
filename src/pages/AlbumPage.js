@@ -7,12 +7,9 @@ import { Link } from 'react-router-dom';
 import "../styles/GlobalStyle.css";
 
 
-/* custom hook */
-import { useDarkTheme } from '../hooks/index';
 
 function AlbumPage() {
-    /* trigger hook background color */
-    useDarkTheme();
+
 
 
     return(

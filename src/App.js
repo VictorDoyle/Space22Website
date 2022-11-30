@@ -2,9 +2,9 @@ import routes from './config/routes';
 
 function App() {
   return (
-    <>
+    <div>
       {routes}
-    </>
+    </div>
   );
 }
 

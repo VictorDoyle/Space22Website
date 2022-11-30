@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 
 function AboutPage() {
@@ -6,6 +7,7 @@ function AboutPage() {
         <>
         <NavBar/>
         <h2> About Page</h2>
+        <Footer/>
         </>
     )
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 
 function Store() {
@@ -6,6 +7,7 @@ function Store() {
         <>
          <NavBar/>
          <h1> STORE</h1>
+         <Footer/>
         </>
     ) 
 }

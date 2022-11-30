@@ -13,7 +13,7 @@ import Store from "../pages/Store";
 export default (
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<LandingPage />} />
+            <Route path="/" element={<LandingPage />}/>
             <Route path="/albums"  element={<AlbumPage />} />
             <Route path="/art"  element={<ArtPage />} />
             <Route path="/store"  element={<Store />} />
