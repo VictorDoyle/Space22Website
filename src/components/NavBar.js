@@ -32,14 +32,10 @@ function NavBar() {
                 {/* nav list here */}
                 <Link tabIndex={0} className="navLink" to={'/albums'} style={{color: color}} > Albums</Link>
                 <Link tabIndex={0} className="navLink" to={'/art'} style={{color: color}}> Art</Link>
+                <Link tabIndex={0} className="navLink" to={'/store'} style={{color: color}}> Store</Link>
                 <Link tabIndex={0} className="navLink" to={'/about'} style={{color: color}}> About</Link>
-
                 {/* contact button here */}
-                <div className="contactUsWrapper">
-                    <Link tabIndex={0} className="navLink contactUs" to={'/contact'} style={{color: color}}> Contact <MdNorthEast className="contactArrow" /></Link>
-                    
-                </div>
-            
+                <Link tabIndex={0} className="navLink contactUs" to={'/contact'} style={{color: color}}> Contact <MdNorthEast className="contactArrow" /></Link>
         
         </div>
 

@@ -35,13 +35,7 @@ function Footer() {
             <div className="navContainer belowFooter">
                 <p className="copyright">SPACE-22 © 2022</p>
             </div>
-        {/* bottom of footer */}
-            <div className="rotatingWrapper">
-                <div className="rotating">
-                    <p> 53 70 61 63 65 2D 32 32 || 53 70 61 63 65 2D 32 32 || 53 70 61 63 65 2D 32 32 || 53 70 61 63 65 2D 32 32 || 53 70 61 63 65 2D 32 32 || 53 70 61 63 65 2D 32 32 ||53 70 61 63 65 2D 32 32 || 53 70 61 63 65 2D 32 32 || 53 70 61 63 65 2D 32 32 || 53 70 61 63 65 2D 32 32 || 53 70 61 63 65 2D 32 32 ||</p>
-                </div>
-            </div>
-
+    
 </div>
         </>
     )

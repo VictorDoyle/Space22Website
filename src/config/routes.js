@@ -7,6 +7,7 @@ import LandingPage from "../pages/LandingPage";
 import ArtPage from "../pages/ArtPage";
 import AlbumPage from "../pages/AlbumPage";
 import ContactPage from "../pages/ContactPage";
+import Store from "../pages/Store";
 
 
 export default (
@@ -15,6 +16,7 @@ export default (
             <Route path="/" element={<LandingPage />} />
             <Route path="/albums"  element={<AlbumPage />} />
             <Route path="/art"  element={<ArtPage />} />
+            <Route path="/store"  element={<Store />} />
             <Route path="/about"  element={<AboutPage />} />
             <Route path='/contact' element={<ContactPage/>} />
         </Routes>
