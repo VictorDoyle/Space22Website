@@ -1,6 +1,7 @@
 /* main/body */
 body {
     background-color: #EEEAEA;
+    padding-bottom: 2.5rem;
 }
 
 /* dark vs light theme */
@@ -122,10 +123,13 @@ h1, h2, h3, h4, h5, p, a {
 }
 
 /* SECTION: Footer styling */
+footer {
+    position: relative;
+}
 .footerContainer {
-    bottom: 0;
     width: 100%;
 }
+
 .footerContainer a , .footerContainer p {
     color: rgb(238 234 234);
 }
@@ -136,7 +140,5 @@ h1, h2, h3, h4, h5, p, a {
 }
 
 .copyright {
-    bottom: 0;
-    margin: auto ;
     text-align: center;
 }

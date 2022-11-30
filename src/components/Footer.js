@@ -10,7 +10,7 @@ import "../styles/GlobalStyle.css";
 function Footer() {
     return(
         <>
-<div className="footerContainer">
+<footer className="footerContainer">
 
         <div className="navContainer" aria-label="Footer" role="navigation">
             <Link to={"/"} className="navLink logoMain">
@@ -36,7 +36,7 @@ function Footer() {
                 <p className="copyright">SPACE-22 © 2022</p>
             </div>
     
-</div>
+</footer>
         </>
     )
 }
