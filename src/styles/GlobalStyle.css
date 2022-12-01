@@ -1,6 +1,7 @@
 /* main/body */
 body {
     background-color: #EEEAEA;
+    position: relative;
     padding-bottom: 2.5rem;
 }
 
@@ -125,6 +126,7 @@ h1, h2, h3, h4, h5, p, a {
 /* SECTION: Footer styling */
 footer {
     position: relative;
+    margin-bottom: -100px;
 }
 .footerContainer {
     width: 100%;

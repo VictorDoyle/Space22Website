@@ -112,31 +112,118 @@
 
 /* album content */
 
-.titleWAlbums {
-    margin-left: 10%;
-    margin-right: 50%;
-}
-
-.titleBAlbums {
-    margin-left: 50%;
-    margin-right: 10%;
+.contentLanding {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "FarLeft FarRight"
 }
 
 .largeH2 {
     font-size: 45px;
 }
 
-/* fix below */
+/* album images top page */
 .w_albumLandingShowCase {
     max-width: 500px;
     border-radius: 10px;
+    grid-area: FarRight;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
+    margin-top: 3em;
 }
 
 .b_albumLandingShowCase {
     max-width: 500px;
     border-radius: 10px;
+    grid-area: FarLeft;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
+    margin-top: 3em;
+}
+
+/* textboxes for albums */
+
+.titleBAlbums {
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: justify;
+}
+
+.titleWAlbums {
+    position: relative;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: justify;
+}
+
+/* showcase mini album cover vinyl styles */
+
+/* container parent */
+
+.vinylAlbumStyle {
+    max-width: 15em;
+    padding: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+    transition: all .2s ease-in-out; 
+    z-index: 100;
+}
+
+
+/* hover anim */
+.vinylAlbumStyle:hover {
+    transform: scale(1.1); 
+}
+
+
+/* ===SECONDARY SECTION */
+
+.stylizedPtoHeading2 {
+    font-size: 6em;
+}
+
+.headSecSection {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* sliding cards */
+
+
+/* =====THIRD SECTION */
+
+
+.thirdSection {
+   
+}
+
+.headThirdSection {
+    text-align: right;
+    margin-right: 2em;
+    margin-left: auto;
+}
+
+.artistPhoto {
+    position: absolute;
+    max-width: 30em;
+    border-radius: .5em;
+    margin-left: 5em;
+    margin-right: 50em;
+
+}
+
+.artistBio {
+    text-align: justify;
+    margin-right: 8em;
+    margin-left: 50em;
+    padding-bottom: 1em;
+}
+
+.clearDivider {
+    padding-top: 5em;
+    padding-bottom:5em;
+    height:5em;
 }

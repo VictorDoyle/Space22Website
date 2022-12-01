@@ -8,9 +8,13 @@ import ReturnToTop from "../components/ReturnToTop";
 import "../styles/LandingPage.css"
 import "../styles/GlobalStyle.css";
 import Footer from '../components/Footer.js';
-/* imgs */
+/* showcase imgs */
 import w_albumShow1 from "../images/W_AlbumLanding1.jpg";
 import b_albumShow1 from "../images/B_AlbumLanding1.jpg";
+/* mini vinyl imgs */
+import bLineVinylAlb1 from "../images/DominanceVinylAlb.jpg";
+import bLineVinylAlb2 from "../images/PrimalVinylAlb.jpg";
+
 
 function LandingPage() {
     /* logic here to find change theme to color base album */
@@ -58,45 +62,136 @@ function LandingPage() {
             </div>
 
             {/* change content based on theme  -- IF THEME LIGHT : DARK*/}
-            <div className="contentLanding">
-                { //Check if message failed
-                    (showColorContent === 'true')
-                    ? 
-                
-                    <div className='titleWAlbums'>
-                        {/* image here */}
-                        <img className='w_albumLandingShowCase' src={w_albumShow1}/>
-                        {/* image end */}
-                    <h2 className='largeH2'>White Lined Albums</h2>
-                    <p>Space-22's white lined albums are used to demark songs that were made more geared towards electronic, club and house music genres </p>
-                    <h3> // WHY? </h3>
-                    <p> The goal of music production is to explore boundaries and to express what the artist feels. Space-22 is constantly trying to challenge his comfort zone and break his boundaries by exploring
-                    new styles and musical genres. </p>
-                    <h3> // WHATS SPECIAL ABOUT WHITE MARKED ALBUMS </h3>
-                    <p> White Marked albums were crafted with love and danceability in mind. Additionally, these tend to be albums that are best experienced with other dancers,
-                    in dance rooms, clubs and dancing environments. </p>
-                    
-                    
-                    </div>
-                    :            
-                    <div className='titleBAlbums'>
-                        {/* image here */}
-                        <img className='b_albumLandingShowCase' src={b_albumShow1}/>
-                        {/* image end */}
-                    <h2 className='largeH2' >Black Lined Albums</h2>
-                    <p>Space-22's black lined albums are used to demark songs that were made more geared towards darkwave, hardcore techno and EBM music genres </p>
-                    <h3> // WHY? </h3>
-                    <p> The goal of music production is to explore boundaries and to express what the artist feels. Space-22 is constantly trying to challenge his comfort zone and break his boundaries by exploring
-                    new styles and musical genres. </p>
-                    <h3> // WHATS SPECIAL ABOUT BLACK MARKED ALBUMS </h3>
-                    <p> Black Marked albums were crafted with attitude and energetic force. These albums are best experienced alone or in deep underground techno raves where no one will judge you for kicking away at every drum break.
+        <div className="contentLanding">
+            { //Check if message failed
+                (showColorContent === 'true')
+                ? 
+                <>
+                    {/* image here */}
+                    <img className='w_albumLandingShowCase' src={w_albumShow1}/>
+                    {/* end image here */}
+                <div className='titleWAlbums'>
 
-                     </p>
-                    
-                    
-                    </div>
-                }
+                <h2 className='largeH2'>White Lined Albums</h2>
+                <p>Space-22's white lined albums are used to demark songs that were made more geared towards electronic, club and house music genres </p>
+                <h3> // WHY? </h3>
+                <p> The goal of music production is to explore boundaries and to express what the artist feels. Space-22 is constantly trying to challenge his comfort zone and break his boundaries by exploring
+                new styles and musical genres. </p>
+                <h3> // WHATS SPECIAL ABOUT WHITE MARKED ALBUMS? </h3>
+                <p> White Marked albums were crafted with love and danceability in mind. Additionally, these tend to be albums that are best experienced with other dancers,
+                in dance rooms, clubs and dancing environments. </p>
+                <h3> // WHICH ARE SPACE-22'S TOP PERFORMING WHITE LINED ALBUMS? </h3>
+                <div className='vinylWAlbumShowCase'>
+                <Link tabIndex={0}  to={'/albums#inherentAttitude'} aria-label="View Album Inherent Attitude">                     
+                    <img className='vinylAlbumStyle' src={w_albumShow1}/>
+                </Link>
+                <Link tabIndex={0}  to={'/albums#inherentAttitude'} aria-label="View Album Inherent Attitude">                     
+                    <img className='vinylAlbumStyle' src={w_albumShow1}/>
+                </Link>
+                <Link tabIndex={0}  to={'/albums#inherentAttitude'} aria-label="View Album Inherent Attitude">                     
+                    <img className='vinylAlbumStyle' src={w_albumShow1}/>
+                </Link>
+
                 </div>
+                
+                </div>
+                    </>
+                :     
+                <>
+                    {/* image here */}
+                    <img className='b_albumLandingShowCase' src={b_albumShow1}/>
+                    {/* image end */}
+                <div className='titleBAlbums'>
+                <h2 className='largeH2' >Black Lined Albums</h2>
+                <p>Space-22's black lined albums are used to demark songs that were made more geared towards darkwave, hardcore techno and EBM music genres </p>
+                <h3> // WHY? </h3>
+                <p> The goal of music production is to explore boundaries and to express what the artist feels. Space-22 is constantly trying to challenge his comfort zone and break his boundaries by exploring
+                new styles and musical genres. </p>
+                <h3> // WHATS SPECIAL ABOUT BLACK MARKED ALBUMS? </h3>
+                <p> Black Marked albums were crafted with attitude and energetic force. These albums are best experienced alone or in deep underground techno raves where no one will judge you for kicking away at every drum break. </p>
+                <h3> // WHICH ARE SPACE-22'S TOP PERFORMING BLACK LINED ALBUMS? </h3>
+
+                <div className='vinylWAlbumShowCase'>
+                <Link tabIndex={0}  to={'/albums#nocturnal'} aria-label="View Album Nocturnal">                     
+                    <img className='vinylAlbumStyle' src={b_albumShow1}/>
+                </Link>
+                <Link tabIndex={0}  to={'/albums#dominance'} aria-label="View Album Dominance">                     
+                    <img className='vinylAlbumStyle' src={bLineVinylAlb1}/>
+                </Link>
+                <Link tabIndex={0}  to={'/albums#primal'} aria-label="View Album Primal">                     
+                    <img className='vinylAlbumStyle' src={bLineVinylAlb2}/>
+                </Link>
+                </div>
+
+                
+                </div>
+                </>       
+            }
+            </div>
+            <div className='clearDivider' aria-hidden='true' role='presentation'></div>
+
+                {/* secondary section here onwrds */}
+            <div className='secondarySection'>
+            <p role='heading' aria-level='2' className='stylizedPtoHeading2 headSecSection'> EMBRACE THE ABERRANT </p>
+            
+            {/* background images left */}
+            {/* end */}
+
+
+            {/* background images right */}
+            {/* end */}
+
+
+
+
+
+
+
+
+            
+            </div>
+            <div className='clearDivider' aria-hidden='true' role='presentation'></div>
+
+            <div className='thirdSection'>
+            <p role='heading' aria-level='2' className='stylizedPtoHeading2 headThirdSection'> MEET THE ARTIST </p>
+            
+            {/* artist images left */}
+            <img className='artistPhoto' src={bLineVinylAlb2}/>
+            {/* end */}
+
+            {/* artist bio */}
+            <p className='artistBio'>Heavily influenced by 80s Drums, Dark Techno and Electronic New Wave, the French/British producer Space-22's approach to production often includes 
+            an eclectic mix of electronic genres and is constantly experimenting with new approaches to Techno. 
+            Inspired by Artists such as The Hacker, Boy Harsher, Phase Fatale and others, 
+            Space-22 is continuing to build his reputation as a producer that likes to break 
+            boundaries and conventional rhythmic structures. </p>
+            <p className='artistBio'>
+            Emerging from the underground dark techno scene of New York City, 
+            Space-22 is constantly operating on the fringes of expectations and convention. 
+            With his unique approach to discography and releasing Black Lined Albums for Dark Techno, 
+            and White Lined Albums for House & Electronic,
+            Space-22 brings an unexpected expertise in production. 
+            </p>
+            <p className='artistBio'>                
+            His recent release "Nocturnal" showcases the breadth and constant change in production style,
+            ranging from Space-22's infamous heavy "attitude" kicks and drums, to dark melodic and vocalized techno soundtracks
+            </p>
+            {/* end */}
+            <div className='clearDivider' aria-hidden='true' role='presentation'></div>
+
+
+            {/* background images right */}
+            {/* end */}
+
+
+
+
+
+
+
+
+            
+            </div>
 
 
 
