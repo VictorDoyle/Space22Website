@@ -26,6 +26,20 @@ body {
     color: #EEEAEA;
 }
 
+/* dark/vs component changes */
+.dark-theme .landingCards {
+    border-color: #EEEAEA;
+    color: rgb(22 22 29) !important;
+    transition:  .5s;
+}
+
+.light-theme .landingCards {
+    border-color: rgb(22 22 29);
+    color: #EEEAEA !important;
+    transition:  .5s;
+}
+
+
 /* site-wide fonts */
 h1, h2, h3, h4, h5, p, a {
     /* font-family v1 */

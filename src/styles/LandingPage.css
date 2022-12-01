@@ -191,7 +191,39 @@
 }
 
 /* sliding cards */
+.gridCardsContainer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "farLeft midLeft midRight farRight";
+    justify-items: center;
+    align-items: center;
+}
 
+.landingCards {
+    border: 1px solid;
+    padding: 1em;
+    min-height: 20em;
+    min-width: 90%;
+    max-width: 90%;
+}
+
+.attitudeCard {
+    grid-area: farLeft;
+}
+
+.remiCard {
+    grid-area: midLeft;
+}
+
+.narraCard {
+    grid-area: midRight;
+}
+
+.exploCard {
+    grid-area: farRight;
+}
 
 /* =====THIRD SECTION */
 

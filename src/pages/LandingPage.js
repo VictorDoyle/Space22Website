@@ -131,15 +131,32 @@ function LandingPage() {
             <div className='clearDivider' aria-hidden='true' role='presentation'></div>
 
                 {/* secondary section here onwrds */}
-            <div className='secondarySection'>
-            <p role='heading' aria-level='2' className='stylizedPtoHeading2 headSecSection'> EMBRACE THE ABERRANT </p>
-            
-            {/* background images left */}
-            {/* end */}
+                <div className='secondarySection'>
+                <p role='heading' aria-level='2' className='stylizedPtoHeading2 headSecSection'> EMBRACE THE ABERRANT </p>
+                <div className='gridCardsContainer'>
+                    <div className='attitudeCard landingCards' >
+
+                    </div>
+                    <div className='remiCard landingCards' >
+
+                    </div>
+                    <div className='narraCard landingCards' >
+
+                    </div>
+                    <div className='exploCard landingCards'>
+
+                    </div>
 
 
-            {/* background images right */}
-            {/* end */}
+                </div>
+
+                
+                {/* background images left */}
+                {/* end */}
+
+
+                {/* background images right */}
+                {/* end */}
 
 
 
@@ -148,40 +165,41 @@ function LandingPage() {
 
 
 
-            
-            </div>
+                
+                </div>
             <div className='clearDivider' aria-hidden='true' role='presentation'></div>
 
+            {/* THIRD SECTION ONWARD */}
             <div className='thirdSection'>
-            <p role='heading' aria-level='2' className='stylizedPtoHeading2 headThirdSection'> MEET THE ARTIST </p>
-            
-            {/* artist images left */}
-            <img className='artistPhoto' src={bLineVinylAlb2}/>
-            {/* end */}
+                <p role='heading' aria-level='2' className='stylizedPtoHeading2 headThirdSection'> MEET THE ARTIST </p>
+                
+                {/* artist images left */}
+                <img className='artistPhoto' src={bLineVinylAlb2}/>
+                {/* end */}
 
-            {/* artist bio */}
-            <p className='artistBio'>Heavily influenced by 80s Drums, Dark Techno and Electronic New Wave, the French/British producer Space-22's approach to production often includes 
-            an eclectic mix of electronic genres and is constantly experimenting with new approaches to Techno. 
-            Inspired by Artists such as The Hacker, Boy Harsher, Phase Fatale and others, 
-            Space-22 is continuing to build his reputation as a producer that likes to break 
-            boundaries and conventional rhythmic structures. </p>
-            <p className='artistBio'>
-            Emerging from the underground dark techno scene of New York City, 
-            Space-22 is constantly operating on the fringes of expectations and convention. 
-            With his unique approach to discography and releasing Black Lined Albums for Dark Techno, 
-            and White Lined Albums for House & Electronic,
-            Space-22 brings an unexpected expertise in production. 
-            </p>
-            <p className='artistBio'>                
-            His recent release "Nocturnal" showcases the breadth and constant change in production style,
-            ranging from Space-22's infamous heavy "attitude" kicks and drums, to dark melodic and vocalized techno soundtracks
-            </p>
-            {/* end */}
-            <div className='clearDivider' aria-hidden='true' role='presentation'></div>
+                {/* artist bio */}
+                <p className='artistBio'>Heavily influenced by 80s Drums, Dark Techno and Electronic New Wave, the French/British producer Space-22's approach to production often includes 
+                an eclectic mix of electronic genres and is constantly experimenting with new approaches to Techno. 
+                Inspired by Artists such as The Hacker, Boy Harsher, Phase Fatale and others, 
+                Space-22 is continuing to build his reputation as a producer that likes to break 
+                boundaries and conventional rhythmic structures. </p>
+                <p className='artistBio'>
+                Emerging from the underground dark techno scene of New York City, 
+                Space-22 is constantly operating on the fringes of expectations and convention. 
+                With his unique approach to discography and releasing Black Lined Albums for Dark Techno, 
+                and White Lined Albums for House & Electronic,
+                Space-22 brings an unexpected expertise in production. 
+                </p>
+                <p className='artistBio'>                
+                His recent release "Nocturnal" showcases the breadth and constant change in production style,
+                ranging from Space-22's infamous heavy "attitude" kicks and drums, to dark melodic and vocalized techno soundtracks
+                </p>
+                {/* end */}
+                <div className='clearDivider' aria-hidden='true' role='presentation'></div>
 
 
-            {/* background images right */}
-            {/* end */}
+                {/* background images right */}
+                {/* end */}
 
 
 
