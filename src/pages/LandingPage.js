@@ -135,15 +135,31 @@ function LandingPage() {
                 <p role='heading' aria-level='2' className='stylizedPtoHeading2 headSecSection'> EMBRACE THE ABERRANT </p>
                 <div className='gridCardsContainer'>
                     <div className='attitudeCard landingCards' >
-
+                        <h2>ATTITUDE</h2>
+                        <p>Each album is created with attitude in mind. Songs are crafted with the desire to make each listener walk differently and in their 
+                            own unique way once the songs start. If people don't notice a shift in your walk when listening to Space-22, then the volume isn't high enough.</p>
                     </div>
                     <div className='remiCard landingCards' >
+                        <h2>REMINISCENCE</h2>
+
+                        <p>A select range of albums were made with a unique reminiscence to the 80's with the use of heavy 
+                            hitting snares, angry drum kicks and melodic synthesizers. The use of vocal effects and chromatic reverberations are also an hommage
+                            to some of the grooviest techno our past has to offer.
+                        </p>
 
                     </div>
                     <div className='narraCard landingCards' >
+                    <h2>NARRATIVE</h2>
+                    <p>Every musical composition made by Space-22 has a narrative component in mind during the production process. The use of music and orchestrating sound as a means to convey a story in the listener's mind is
+                        central to Space-22's music.
+                    </p>
 
                     </div>
                     <div className='exploCard landingCards'>
+                    <h2>EXPLORATION</h2>
+                    <p>Space-22's musical production puts genre, musical and imaginative exploration at the forefront of his approach to music. Every song made is a song that 
+                        is crafted with the hope to break personal boundaries of comfort with music production. Every album released is a point of no return in discovery.
+                    </p>
 
                     </div>
 

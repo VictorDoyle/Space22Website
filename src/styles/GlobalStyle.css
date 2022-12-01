@@ -29,13 +29,13 @@ body {
 /* dark/vs component changes */
 .dark-theme .landingCards {
     border-color: #EEEAEA;
-    color: rgb(22 22 29) !important;
+    color: #EEEAEA !important;
     transition:  .5s;
 }
 
 .light-theme .landingCards {
     border-color: rgb(22 22 29);
-    color: #EEEAEA !important;
+    color: rgb(22 22 29) !important;
     transition:  .5s;
 }
 
